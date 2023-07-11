@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import CarouselBox from "../Components/CarouselBox";
-import {Card, CardGroup, Container} from "react-bootstrap";
+import {Card, CardGroup, Col, Container, Row} from "react-bootstrap";
 import Art from "../Assets/Art.jpg";
 import cuteSnake from "../Assets/Cute_Snake.jpg";
 import girl from "../Assets/Girl_from_Slytherin.jpg";
@@ -14,8 +14,8 @@ class Home extends Component {
                 <Container className="mb-4">
                     <h2 className="text-center m-4">Something interesting</h2>
                     <CardGroup>
-                        <div className="row row-cols-md-4">
-                            <div className="col mt-4">
+                        <Row className="row-cols-md-4">
+                            <Col className="mt-4">
                                 <Card className="h-100" border="light">
                                     <Card.Img
                                         variant="top"
@@ -26,9 +26,9 @@ class Home extends Component {
                                         <Card.Text>Slytherin has become the most popular faculty in Hogwarts Legacy — based on Achievement statistics.</Card.Text>
                                     </Card.Body>
                                 </Card>
-                            </div>
+                            </Col>
 
-                            <div className="col mt-4">
+                            <Col className="mt-4">
                                 <Card className="h-100" border="light">
                                     <Card.Img
                                         variant="top"
@@ -40,9 +40,9 @@ class Home extends Component {
                                         <Card.Text>Professor Binns: "That is believed to be some sort of monster, which the Heir of Slytherin alone can control."</Card.Text>
                                     </Card.Body>
                                 </Card>
-                            </div>
+                            </Col>
 
-                            <div className="col mt-4">
+                            <Col className="mt-4">
                                 <Card className="h-100" border="light">
                                     <Card.Img
                                         variant="top"
@@ -56,9 +56,9 @@ class Home extends Component {
                                         <Card.Text>She's frighteningly strange. She came here for a reason.</Card.Text>
                                     </Card.Body>
                                 </Card>
-                            </div>
+                            </Col>
 
-                            <div className="col mt-4">
+                            <Col className="mt-4">
                                 <Card className="h-100" border="light">
                                     <Card.Img
                                         variant="top"
@@ -74,8 +74,8 @@ class Home extends Component {
                                         You'll learn to laugh, if first you sob.
                                     </Card.Body>
                                 </Card>
-                            </div>
-                        </div>
+                            </Col>
+                        </Row>
                     </CardGroup>
                 </Container>
             </>
